@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ads',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'avito_app.urls'
+ROOT_URLCONF = 'HomeWork_27.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'avito_app.wsgi.application'
+WSGI_APPLICATION = 'HomeWork_27.wsgi.application'
 
 
 # Database
@@ -79,6 +80,11 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+FIXTURE_DIRS = [
+    "fixtures"
+]
 
 
 # Password validation
